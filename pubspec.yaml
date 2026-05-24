@@ -1,0 +1,42 @@
+name: marketplace_app
+description: Application de vente/achat d'articles entre particuliers
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP
+  http: ^1.2.0
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # State management
+  provider: ^6.1.2
+
+  # Persistance clé/valeur (favoris) — comme TD6
+  shared_preferences: ^2.2.3
+
+  # Persistance SQLite (panier) — comme TD6
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+  # SQLite FFI — utilisé dans main.dart pour initialisation desktop (Windows/macOS/Linux)
+  sqflite_common_ffi: ^2.3.3
+
+  # UI
+  cupertino_icons: ^1.0.6
+  cached_network_image: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
